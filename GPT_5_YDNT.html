@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;YOU DON’T NEED THIS — Premium Collection&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- STRICT SINGLE-FILE BUILD</p>
+<p class="p1"><span class="Apple-converted-space">       </span>- No external libs/CDNs/fonts.</p>
+<p class="p1"><span class="Apple-converted-space">       </span>- No network calls except local LOTS/* images/video.</p>
+<p class="p1"><span class="Apple-converted-space">       </span>- Edit data ONLY in the JSON block with id="ydnt-data".</p>
+<p class="p1"><span class="Apple-converted-space">       </span>- Folder names are used verbatim; no normalization. --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #0b0c10;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--surface: rgba(255,255,255,0.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: rgba(255,255,255,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--fg: #e6e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted: #9aa0aa;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold1: #f8d57e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold2: #b8892b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #7dd3fc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 10px 30px rgba(0,0,0,.35);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maxw: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body{height:100%}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:0; font:16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--fg); background: radial-gradient(1200px 600px at 20% -10%, #1a1b22, transparent),</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>radial-gradient(1000px 500px at 100% 0%, #13141a, transparent),</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container{max-width:var(--maxw); margin:0 auto; padding:24px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; margin:24px 0 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.title{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight:800; font-size:40px; letter-spacing:.3px; margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, var(--gold1), var(--gold2));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-background-clip:text; background-clip:text; color:transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.subtitle{color:var(--muted); font-size:18px; margin:0}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-img{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width:100%; max-height:340px; object-fit:cover; border-radius:var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:var(--shadow); border:1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-grid{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:grid; gap:20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fill,minmax(240px,1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:block; padding:12px; border-radius:var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:backdrop-filter: blur(8px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border); box-shadow:var(--shadow); text-decoration:none; color:inherit;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform .12s ease, border-color .12s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card:hover{ transform: translateY(-2px); border-color: rgba(248,213,126,.6); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.thumb{ width:100%; height:180px; object-fit:cover; border-radius:12px; border:1px solid var(--border); background:#111 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card h3{ font-size:16px; margin:10px 0 6px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.meta{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; color:var(--muted); font-size:13px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge{ padding:2px 8px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,0.04) }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.price{ color:var(--gold1); font-weight:700 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.toolbar{ display:flex; justify-content:space-between; align-items:center; margin-top:8px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.count{ color:var(--muted); font-size:14px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); color:var(--fg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none; font-weight:600;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover{ border-color: rgba(248,213,126,.6); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Detail */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.detail{ max-width:var(--maxw); margin:0 auto; padding:24px 20px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.back{ display:inline-block; margin-bottom:14px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.detail-title{ font-size:28px; margin:8px 0 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.detail-meta{ color:var(--muted); display:flex; gap:12px; flex-wrap:wrap; margin:6px 0 12px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.gallery{ display:grid; gap:14px; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); margin-top:8px }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.gal-img{ width:100%; height:260px; object-fit:cover; border-radius:12px; border:1px solid var(--border); background:#111 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>video{ width:100%; max-height:420px; border-radius:12px; border:1px solid var(--border); background:#000 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Utility */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hidden{ display:none !important }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.center{ text-align:center }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.muted{ color:var(--muted) }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.notice{ border:1px dashed var(--border); padding:10px 12px; border-radius:12px; display:inline-block }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="app"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- DATA: EDIT THIS JSON ONLY. Keep folder names EXACT. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script id="ydnt-data" type="application/json"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>"heroImage": "assets/hero.jpg",</p>
+<p class="p1"><span class="Apple-converted-space">    </span>"lots": [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"id": "LOT_001",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"title": "Microsoft Surface Go 3",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"price": "$399-$549",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"category": "Tablets",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"rating": 5,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"folder": "LOT_001_Microsoft_Surface_Go_3_10_5_Touchscreen_Intel_Core_i3_8GB_Memory_128GB_SSD",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"images": ["Photos/1.jpg","Photos/2.jpg"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"video": "Videos/main.mp4",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"description": "Short, plain-text description."</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>]</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== STRICT APP (single-file, no external deps) =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const $ = (sel, el=document) =&gt; el.querySelector(sel);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const app = $('#app');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Read inline JSON once</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let DATA;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>DATA = JSON.parse($('#ydnt-data').textContent.trim());</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} catch(e) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.body.innerHTML = '&lt;div class="container center"&gt;&lt;h2&gt;Invalid data.json&lt;/h2&gt;&lt;p class="muted"&gt;'+String(e)+'&lt;/p&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>throw e;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// URL builders (no normalization)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const lotThumb = (lot) =&gt; `LOTS/${lot.folder}/Photos/thumb.jpg`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const lotImg <span class="Apple-converted-space">  </span>= (lot, rel) =&gt; `LOTS/${lot.folder}/${rel}`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const lotVid <span class="Apple-converted-space">  </span>= (lot) =&gt; lot.video ? `LOTS/${lot.folder}/${lot.video}` : null;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Views</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderGrid() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const lots = DATA.lots || [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const hero = DATA.heroImage || null;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const heroHtml = hero</p>
+<p class="p1"><span class="Apple-converted-space">        </span>? `&lt;img class="hero-img" src="${hero}" alt="Hero Image" onerror="console.warn('Image failed', this.src)"&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">        </span>: '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const cards = lots.map(l =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="card" href="#lot/${encodeURIComponent(l.id)}" aria-label="${l.title}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="thumb" src="${lotThumb(l)}" alt="${l.title}" onerror="console.warn('Image failed', this.src)" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;${l.title}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;${l.category || '—'}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;★ ${l.rating ?? '—'}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="price"&gt;${l.price || ''}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`).join('');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>app.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="title"&gt;Premium Collection&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="subtitle"&gt;Curated tech, ready to ship.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>${heroHtml}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="toolbar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="count"&gt;${lots.length} items&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#/"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-grid"&gt;${cards}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderDetail(id) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const lots = DATA.lots || [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const lot = lots.find(x =&gt; String(x.id) === String(id));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!lot) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>app.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn back" href="#/"&gt;← Back&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h2&gt;Item not found&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="muted"&gt;ID: ${id}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const imgs = (lot.images || []);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const gallery = [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`&lt;img class="gal-img" src="${lotThumb(lot)}" alt="${lot.title} thumbnail" onerror="console.warn('Image failed', this.src)"&gt;`,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>...imgs.map(rel =&gt; `&lt;img class="gal-img" src="${lotImg(lot, rel)}" alt="${lot.title}" onerror="console.warn('Image failed', this.src)"&gt;`)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>].join('');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const vid = lotVid(lot);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const videoHtml = vid ? `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;video controls preload="metadata" src="${vid}"&gt;&lt;/video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;` : '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>app.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn back" href="#/"&gt;← Back&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 class="detail-title"&gt;${lot.title}&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="detail-meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;${lot.category || '—'}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;★ ${lot.rating ?? '—'}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="price"&gt;${lot.price || ''}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="muted"&gt;${lot.description || ''}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>${videoHtml}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="gallery"&gt;${gallery}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Router (hash-only)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function router() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const h = location.hash || '#/';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (h.startsWith('#/')) return renderGrid();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (h.startsWith('#lot/')) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const id = decodeURIComponent(h.split('/')[1] || '');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return renderDetail(id);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// default</p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderGrid();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.addEventListener('hashchange', router);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.addEventListener('DOMContentLoaded', router);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
